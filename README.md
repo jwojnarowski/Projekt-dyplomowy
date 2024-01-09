@@ -1,7 +1,7 @@
 Żeby program działał trzeba stworzyć katalog z podkatalogami:
 
--results \n
-  -combined_histograms \n
+-results
+  -combined_histograms
   -count_histograms
   -count_histograms_true_data
   -efficiency
