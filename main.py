@@ -3,7 +3,7 @@ from functions import *
 
 if __name__ == "__main__":
     # Stworzenie obiektu Simulation dla danych z Monte Carlo (w domysle true_data=False)
-    # Przekazywana jest ścieżka do danych i ścieżka do katalogu w którym zostaną umieszczone wyniki
+    # Przekazywana jest ścieżka do danych i ścieżka do katalogu w którym zostaną umieszczone wyniki (katalog results)
     sim = Simulation('/home/jakub/Desktop/data/', "/home/jakub/PycharmProjects/Root/results")
     # Wywołanie funkcji wypełniającej histogramy
     sim.fill_all_histograms()
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     sim.save_all_histograms()
 
     # Stworzenie obiektu Simulation dla danych doświadczalnych
-    # Przekazywana jest ścieżka do danych i ścieżka do katalogu w którym zostaną umieszczone wyniki
+    # Przekazywana jest ścieżka do danych i ścieżka do katalogu w którym zostaną umieszczone wyniki (katalog results)
     sim_true_data = Simulation('/home/jakub/Desktop/data_true/', f"/home/jakub/PycharmProjects/Root/results",
                                true_data=True)
     # Wywołanie funkcji wypełniającej histogramy
