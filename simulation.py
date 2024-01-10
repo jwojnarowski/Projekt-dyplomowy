@@ -756,7 +756,7 @@ class Simulation:
 
             # Jeśli w danym zdarzeniu zarejestrowano przynajmniej 1 pi+ i przynajmniej 1 pi-
             if pi_plus_count != 0 and pi_minus_count != 0:
-                # Tworzone są tablice 2x2 wwszystkich kombinacji energii i współrzędnych pędu czątek pi+ i pi-
+                # Tworzone są macierze wszystkich kombinacji energii i współrzędnych pędu czątek pi+ i pi-
                 # zarejestrowanych w tym zdarzeniu
                 pi_plus_E, pi_minus_E = np.meshgrid(pi_plus_E_all[pi_plus_cum - pi_plus_count:pi_plus_cum],
                                                     pi_minus_E_all[pi_minus_cum - pi_minus_count:pi_minus_cum])
@@ -777,7 +777,7 @@ class Simulation:
 
             # Jeśli w danym zdarzeniu zarejestrowano przynajmniej 1 K+ i przynajmniej 1 K-
             if K_plus_count != 0 and K_minus_count != 0:
-                # Tworzone są tablice 2x2 wwszystkich kombinacji energii i współrzędnych pędu czątek K+ i K-
+                # Tworzone są macierze wszystkich kombinacji energii i współrzędnych pędu czątek K+ i K-
                 # zarejestrowanych w tym zdarzeniu
                 K_plus_E, K_minus_E = np.meshgrid(K_plus_E_all[K_plus_cum - K_plus_count:K_plus_cum],
                                                   K_minus_E_all[K_minus_cum - K_minus_count:K_minus_cum])
@@ -799,7 +799,7 @@ class Simulation:
 
             # Jeśli w danym zdarzeniu zarejestrowano przynajmniej 1 p i przynajmniej 1 pi-
             if p_plus_count != 0 and pi_minus_count != 0:
-                # Tworzone są tablice 2x2 wwszystkich kombinacji energii i współrzędnych pędu czątek p i pi-
+                # Tworzone są macierze wszystkich kombinacji energii i współrzędnych pędu czątek p i pi-
                 # zarejestrowanych w tym zdarzeniu
                 p_plus_E, pi_minus_E = np.meshgrid(p_plus_E_all[p_plus_cum - p_plus_count:p_plus_cum],
                                                    pi_minus_E_all[pi_minus_cum - pi_minus_count:pi_minus_cum])
@@ -821,7 +821,7 @@ class Simulation:
 
             # Jeśli w danym zdarzeniu zarejestrowano przynajmniej 1 pi+ i przynajmniej 1 anty-p
             if pi_plus_count != 0 and p_minus_count != 0:
-                # Tworzone są tablice 2x2 wwszystkich kombinacji energii i współrzędnych pędu czątek pi+ i anty-p
+                # Tworzone są macierze wszystkich kombinacji energii i współrzędnych pędu czątek pi+ i anty-p
                 # zarejestrowanych w tym zdarzeniu
                 pi_plus_E, p_minus_E = np.meshgrid(pi_plus_E_all[pi_plus_cum - pi_plus_count:pi_plus_cum],
                                                    p_minus_E_all[p_minus_cum - p_minus_count:p_minus_cum])
